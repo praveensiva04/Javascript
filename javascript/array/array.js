@@ -16,6 +16,7 @@
     // 14.Array.from🟢
 
 // let arrfruits = ['apple','banana','orange','papaya'];
+
 // console.log(arrfruits);
 
 // arrfruits.push('grapes','plum');//push method is used to add the elements in the last index
