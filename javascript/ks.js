@@ -383,48 +383,54 @@
 // }
 // sum();
 
-// ANONYMOUS FUNCTION
+// ANONYMOUS FUNCTION -- A function without a name is called anonymous function
 
-// function()
+// let fun = function()
 // {
 //     console.log("<MANKATHA DA>");
     
-// }
+// };
+// fun();
 
-// 3 FUNCTION EXPRESSION
+// 3 FUNCTION EXPRESSION --we can pass the expression and the function is stored inside the variable.
 
-// let myfunc = function()
+// let myfunc = function(a,b)
 // {
-//     console.log("MANKATHA DA №");
+//     console.log("Function expression");
     
 // }
-// myfunc();
+// console.log(myfunc(10,29));
 
 // let namedvar = function sum()
 // {
 //     console.log("Iam a function expression with default name");
     
 // }
-// sum()
+// sum();
 // namedvar();
 
 // 4 IIFE (IMMEDIATE INVOKING FUNCTION EXPRESSION)
                                                         
-// (function life ()x
+// (function life()
 // {
 //     console.log("Iam a IIFE Function");
     
-// })()
+// })
+// ();//it will execute without calling the function name.
 // life();
+
 // 5 ARROW FUNCTION
 
 
-// let name = () =>{
+// let name = () => {
+//     console.log("Hello Javascript");
 
 //     console.log("Praveen");
-// };
+// }
 // name();
 
+// let age = (a,b) => a+b;
+// console.log(age(10,20));
 
 // let age = () => {
 //     console.log("Hello Javascript");
@@ -434,11 +440,13 @@
 // 6 HOF ---HIGHER ORDER FUNCTION
 
 // function greet(n) {
-// //   return `Hello, ${n};
+//     // return `Hello, ${n}`;
 //     console.log(n);
     
 // }
-// greet("praveen");
+// console.log(greet("praveen"));
+// greet("arun");
+ 
 
 // closures and Scopes
 // if (true) {
@@ -582,4 +590,5 @@
 // console.log(name.slice(-5,1));
 // console.log(name.slice(1,2));
 // console.log(name.substr(1,4));
+
 

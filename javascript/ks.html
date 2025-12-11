@@ -4,7 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="ks.js"></script>
+    <script>
+        /*
+        let product = {
+            name: 'socks',
+            price: 1090
+        };
+        console.log(typeof(product));
+        console.log(product);
+        console.log(product.name);
+        console.log(product.price);
+        
+        product.name = 'cotton socks';
+        console.log(product.name);
+
+        product.quantity = 1;
+        console.log(product);
+        
+        delete product.quantity;
+        console.log(product);
+        
+        */
+
+        /*
+        const product2 = {
+            name: 'shirt',
+            'delivery-time': '1 day',
+            rating: {
+                stars:4.5,
+                count: 87
+            },
+            fun: function function1()
+                {
+                    console.log('function inside object');
+                    
+                }
+        };
+        console.log(product2);
+        console.log(product2.name);
+        console.log(product2['name']);
+        // console.log(product2.delivery-time);// it is error due to the mathametical symbol(arithmatic)
+        console.log(product2['delivery-time']);
+        console.log(product2.rating.count);
+        product2.fun();
+        
+        console.log(typeof(console.log));
+        
+        console.log(JSON.stringify(product2));
+        const jsonstring = JSON.stringify(product2);
+        console.log(JSON.parse(jsonstring));
+        */
+
+        console.log('hello'.length);
+
+        const object1 = {
+            name: 'praveen'
+
+        };
+        console.log(object1);
+        
+        const object2 = object1;
+
+        object2.name='Siva';
+        console.log(object1);
+        
+        const object3 = {
+            name: 'siva'
+        };
+
+        console.log(object3===object1);
+        console.log(object2===object1);
+        
+        const object4 = {
+            name: 'siva',
+            place: 'thanjavur',
+            mobno: 6968584982
+        };
+
+        const {name,place,mobno} = object4;//destructuring
+        console.log(mobno);
+
+        //Short-Hand property and method
+
+        const object5 = {
+            // name: name  
+            name,
+            // method: function fun()
+            // {
+            //     console.log("FUN");
+                
+            // }
+
+            method()
+            {
+                console.log("FUN");
+            }
+        }
+        console.log(name);
+        object5.method();
+        
+    </script>
     <link rel="stylesheet" href="ks.css">
 </head>
 <body>
