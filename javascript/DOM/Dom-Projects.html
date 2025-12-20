@@ -4,10 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dom Project</title>
+  <style>
+    body{
+      font-family: Arial;
+      /* box-sizing: border-box; */
+    }
+    .Subscribe-button{
+      background-color: black;
+      color: rgb(255, 255, 255);
+      border: none;
+      border-radius: 50px;
+      padding: 10px 15px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 30px;
+      /* height: 30px; */
+      /* width: 100px; */
+      /* padding-top:10px ;
+      padding-bottom:10px ;
+      padding-right: 20px;
+      padding-left: 20px; */
+    }
+    .is-subscribed{
+      background-color: rgb(182, 188, 188);
+      color: rgb(35, 34, 34);
+      /* border: none;
+      border-radius: 50px;
+      padding: 10px 15px;
+      font-weight: bold;
+      cursor: pointer; */
+    }
+
+  </style>
 </head>
 <body>
     <p>Youtube Subscribe Button</p>
-    <button onclick="subscribe()" class="js-Subscribe-button">Subscribe</button>
+    <button onclick="subscribe()" class="js-Subscribe-button Subscribe-button">Subscribe</button>
   <script>
     function subscribe()
     {
@@ -16,10 +48,13 @@
         if(buttonElem.innerText ==='Subscribe')
         {
             buttonElem.innerText = 'Subscribed';
+            buttonElem.classList.add('is-subscribed');
         }
         else
         {
+
             buttonElem.innerText = 'Subscribe';
+            buttonElem.classList.remove('is-subscribed');
         }
     }
   </script>

@@ -5,9 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shipping Calculator</title>
 </head>
+<style>
+    body{
+        background-color: #cfcfcf;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .cost-input{
+        font-size: 15px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 20px;
+    }
+    button{
+        font-size: 15px;
+        padding: 10px 15px;
+        background-color: rgb(108, 196, 45);
+        color: beige;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+</style>
 <body>
     <p>Amazon Shipping Calculator</p>
-    <input placeholder="Cost of order" class="js-input" onkeydown="if (event.key==='Enter') {
+    <p>Free delivery if the cost of product under 40$</p>
+    <input placeholder="Cost of order" class="js-input cost-input" onkeydown="if (event.key==='Enter') {
         CalculateTotal();
     }">
     <button onclick="

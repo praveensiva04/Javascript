@@ -8,13 +8,32 @@
 <body>
   <button>Hello</button>
   <button class="js-btn">Second Button</button>
+  <button class="js-btn2">9a</button>
+  <button class="js-btn3">9b</button>
+
+  <button onclick="
+      const pElement = document.querySelector('.js-paragraph');
+      pElement.textContent='You chose : heads';
+  ">Heads</button>
+  <button onclick="
+      const pElement = document.querySelector('.js-paragraph');
+      pElement.textContent='You chose : Tails';
+  ">Tails</button>
+  <p class="js-paragraph"></p>
   <script>
 
     console.log(document.querySelector("button").innerHTML);
-    document.querySelector("button").innerHTML = "Changed";
+    // document.querySelector("button").innerHTML = "Changed";
     // console.log(document.querySelector(".js-btn"));
-    const buttonElement = document.querySelector(".js-btn");
-    console.log(buttonElement);
+    // const buttonElement = document.querySelector(".js-btn").innerHTML;
+    // console.log(buttonElement);
+    console.log(document.querySelector('.js-btn2').innerHTML);
+    console.log(document.querySelector('.js-btn3').innerHTML);
+    const btn3Element = document.querySelector('.js-btn3');
+    btn3Element.textContent = '9b done!';
+    console.log(btn3Element);
+    
+     
     
      
 
