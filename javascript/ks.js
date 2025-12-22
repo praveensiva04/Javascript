@@ -591,4 +591,17 @@
 // console.log(name.slice(1,2));
 // console.log(name.substr(1,4));
 
+let arr = [1,2,3];
+let arr3 =arr.filter(x=>x>1);
+console.log(arr3);
+// let arr2=arr.map(x =>x*3);
+// console.log(arr2);
 
+arr.forEach(x=> 
+    console.log(x)
+);
+
+arr.reduce((x,y)=>
+    x+y
+);
+console.log(arr);
